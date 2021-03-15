@@ -8,3 +8,5 @@ My Portfolio as published to https://stupefied-mclean-bb6293.netlify.app, https:
 ## To run
 
 `npm start`
+
+In the dist folder there is the static build site
