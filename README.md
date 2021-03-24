@@ -1,4 +1,4 @@
-My Portfolio as published to https://stupefied-mclean-bb6293.netlify.app and http://elisha.tk
+My Portfolio as published to https://donno2048.github.io/Portfolio/dist/, https://stupefied-mclean-bb6293.netlify.app and http://elisha.tk
 
 
 ## To install
