@@ -136,9 +136,12 @@
               op -= op * 0.1;
           }, 50);
       }
+      var curTime = Date.now();
       window.onload = function() {
         var childs = document.getElementsByClassName("cubes")[0].childNodes;
-        setTimeout(() => {for (var i = 0; i < childs.length; i++) fade(childs[i]);}, 2000);
+        var difTime = Date.now() - curTime;
+        while (difTime % 500 < 400 || difTime < 2000) {difTime = Date.now() - curTime;}
+        setTimeout(() => {for (var i = 0; i < childs.length; i++) fade(childs[i]);}, 50);
       };
       </script>
       <style id="undisplay">
