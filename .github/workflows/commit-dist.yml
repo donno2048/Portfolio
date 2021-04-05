@@ -1,0 +1,17 @@
+name: Commit the dist folder
+on: push
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm i
+      - run: npm run-script build
+      - uses: EndBug/add-and-commit@v7
+        with:
+          author_name: donno2048
+          author_email: just4now666666@gmail.com
+          message: 'Add the dist folder [GitHub action]'
