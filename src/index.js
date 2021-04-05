@@ -2,7 +2,13 @@ import initTilt from './js/tilt';
 import initSr from './js/sr';
 
 import './style/main.scss';
-
+(() => { //ToDo: better konami code
+  var input = '', key = '38384040373937396665';
+  document.addEventListener('keydown', function (e) {
+    input = key.indexOf(input) ? "" : input + e.keyCode;
+    if (input === key) alert('\\o/\n  |\n/  \\');
+  });
+})()
 $('a[href^="#"]').on('click', function(event) {
   var target = $(this.getAttribute('href'));
   if (target.length) {
