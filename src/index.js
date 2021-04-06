@@ -1,5 +1,8 @@
 import initTilt from './js/tilt';
 import initSr from './js/sr';
+import NewCursor from './js/cursor';
+import fadeCube from './js/fadeCube';
+import './js/bubbleColor'; //rightclick effect
 import './style/main.scss';
 (() => { //ToDo: better konami code
   var input = '', key = '38384040373937396665';
@@ -24,3 +27,5 @@ $('a[href^="#"]').on('click', function(event) {
 });
 initSr();
 initTilt();
+NewCursor();
+fadeCube();

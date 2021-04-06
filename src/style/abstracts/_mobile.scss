@@ -1,0 +1,16 @@
+@media screen and (min-width: 0px) and (max-device-width: 780px) {
+	#pc {
+		display: none;
+	}
+	.mobile-hide {
+		display: none;
+	}
+}
+.mobile-articles {
+	display: none;
+}
+@media screen and (max-device-width:780px) {
+	.mobile-articles {
+		display: block;
+	}
+}

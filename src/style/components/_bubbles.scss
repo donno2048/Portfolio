@@ -1,0 +1,97 @@
+@import './keyframes';
+.bubble1, .bubble2, .bubble3, .bubble4, .bubble5, .bubble6, .bubble7, .bubble8, .bubble9, .bubble10 {
+	position: absolute;
+	bottom: -300%;
+	width: 40px;
+	height: 40px;
+	background: red;
+	border-radius: 50%;
+	opacity: 0.5;
+	animation: rise 10s infinite ease-in;
+	z-index: 99;
+}
+.bubble1 {
+	width: 40px;
+	height: 40px;
+	left: 10%;
+	animation-duration: 8s;
+}
+.bubble2 {
+	width: 20px;
+	height: 20px;
+	left: 20%;
+	animation-duration: 5s;
+	animation-delay: 1s;
+}
+.bubble3 {
+	width: 50px;
+	height: 50px;
+	left: 35%;
+	animation-duration: 7s;
+	animation-delay: 2s;
+}
+.bubble4 {
+	width: 80px;
+	height: 80px;
+	left: 50%;
+	animation-duration: 11s;
+	animation-delay: 0s;
+}
+.bubble5 {
+	width: 35px;
+	height: 35px;
+	left: 55%;
+	animation-duration: 6s;
+	animation-delay: 1s;
+}
+.bubble6 {
+	width: 45px;
+	height: 45px;
+	left: 65%;
+	animation-duration: 8s;
+	animation-delay: 3s;
+}
+.bubble7 {
+	width: 90px;
+	height: 90px;
+	left: 70%;
+	animation-duration: 12s;
+	animation-delay: 2s;
+}
+.bubble8 {
+	width: 25px;
+	height: 25px;
+	left: 80%;
+	animation-duration: 6s;
+	animation-delay: 2s;
+}
+.bubble9 {
+	width: 15px;
+	height: 15px;
+	left: 70%;
+	animation-duration: 5s;
+	animation-delay: 1s;
+}
+.bubble10 {
+	width: 90px;
+	height: 90px;
+	left: 30%;
+	animation-duration: 10s;
+	animation-delay: 4s;
+}
+@include keyframes(rise) {
+	0%{
+        bottom: -300%;
+    	transform: translateX(0);
+	}
+	33% {
+		transform: translate(200px);
+	}
+	66% {
+		transform: translate(-200px);
+	}
+	100% {
+		bottom: 100%;
+		transform: translateX(-100px);
+	}
+}
