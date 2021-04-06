@@ -7,8 +7,6 @@ export default function() {
     desktop: true,
     mobile: true
   };
-  
-  /* Section Title */
   ScrollReveal().reveal('.section-title', 
     assignProps(
       {
@@ -16,8 +14,6 @@ export default function() {
         origin:'bottom'
       }, defaultProps)
   );
-
-  /* Hero Section */
   ScrollReveal().reveal('.hero-title', 
     assignProps(
       { 
@@ -25,7 +21,6 @@ export default function() {
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
-  
   ScrollReveal().reveal('.hero-cta', 
     assignProps(
       {
@@ -33,8 +28,6 @@ export default function() {
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
-
-  /* About Section */
   ScrollReveal().reveal('.about-wrapper__image', 
     assignProps(
       {
@@ -42,7 +35,6 @@ export default function() {
         origin: 'bottom'
       }, defaultProps)
   );
-
   ScrollReveal().reveal('.about-wrapper__info', 
     assignProps(
       {
@@ -50,8 +42,6 @@ export default function() {
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
-
-  /* Projects Section */
   ScrollReveal().reveal('.project-wrapper__text', 
     assignProps(
       {
@@ -59,7 +49,6 @@ export default function() {
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
-
   ScrollReveal().reveal('.project-wrapper__image', 
     assignProps(
       {
@@ -67,8 +56,6 @@ export default function() {
         origin: window.innerWidth > 768 ? 'right' : 'bottom'
       }, defaultProps)
   );
-
-  /* Contact Section */
   ScrollReveal().reveal('.contact-wrapper', 
     assignProps(
       {
