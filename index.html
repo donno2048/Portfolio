@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>donno2048</title>
         <link rel="icon" href="./dist/favicon.png">
+        <script>
+          function setTitle(length) {
+            i = typeof i !== 'undefined' ? (i + 1) % length : 0;
+            document.title = "_".repeat(length - i - 1) + "🚗" + "_".repeat(i);
+          }
+          window.setInterval(() => setTitle(20), 500);
+        </script>
     </head>
   <frameset><frame src="./dist/index.html"></frameset>
 </html>
