@@ -3,7 +3,11 @@ My Portfolio as published to https://donno2048.github.io/Portfolio/, https://stu
 
 ## To install
 
-`npm i`
+```sh
+git clone https://github.com/donno2048/Portfolio
+cd Portfolio
+npm i
+```
 
 ## To run
 
