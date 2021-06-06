@@ -1,5 +1,5 @@
 name: Commit the dist folder
-on: push
+on: [push, workflow_dispatch]
 jobs:
   commit:
     runs-on: ubuntu-latest
