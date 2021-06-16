@@ -27,5 +27,5 @@ $('a[href^="#"]').on('click', function(event) {
 });
 initSr();
 initTilt();
-NewCursor();
+//NewCursor(); // this is ugly
 fadeCube();
