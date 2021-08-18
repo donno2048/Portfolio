@@ -5,6 +5,8 @@
     $primary-color 0%,
     $secondary-color 100%
   );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   color: $white-color;
   height: 100%;
   border-top: 0px;
@@ -65,5 +67,16 @@
         }
       }
     }
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
