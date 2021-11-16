@@ -2,13 +2,14 @@ import initTilt from './js/tilt';
 import initSr from './js/sr';
 import NewCursor from './js/cursor';
 import fadeCube from './js/fadeCube';
+import animation, {scene, black} from './js/3d';
 import './js/bubbleColor'; //rightclick effect
 import './style/main.scss';
-(() => { //ToDo: better konami code
+(() => {
   var input = '', key = '38384040373937396665';
   document.addEventListener('keydown', function (e) {
     input = key.indexOf(input) ? "" : input + e.keyCode;
-    if (input === key) alert('\\o/\n  |\n/  \\');
+    if (input === key) scene.background = black;
   });
 })()
 $('a[href^="#"]').on('click', function(event) {
@@ -29,3 +30,4 @@ initSr();
 initTilt();
 //NewCursor(); // this is ugly
 fadeCube();
+animation();

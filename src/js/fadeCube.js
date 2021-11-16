@@ -23,6 +23,7 @@ function fadeCube() {
       var difTime = Date.now() - curTime;
       while (difTime % 500 < 400 || difTime < 2000) {difTime = Date.now() - curTime;}
       setTimeout(() => {for (var i = 0; i < childs.length; i++) fade(childs[i]);}, 50);
+      document.getElementsByTagName('canvas')[0].style.display = 'block';
     };
 }
 export default fadeCube;
