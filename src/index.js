@@ -1,6 +1,6 @@
 import initTilt from './js/tilt';
 import initSr from './js/sr';
-import NewCursor from './js/cursor';
+import NewCursor, {clickEffect} from './js/cursor';
 import fadeCube from './js/fadeCube';
 import animation, {scene, black} from './js/3d';
 import './js/bubbleColor'; //rightclick effect
@@ -26,6 +26,7 @@ $('a[href^="#"]').on('click', function(event) {
       );
   }
 });
+document.addEventListener('click', clickEffect);
 initSr();
 initTilt();
 //NewCursor(); // this is ugly

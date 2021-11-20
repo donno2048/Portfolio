@@ -1,3 +1,15 @@
+function clickEffect(e) {
+    var div = document.createElement("div");
+    div.style.top = `${e.clientY}px`;
+    div.style.left = `${e.clientX}px`;
+    div.style.position = "fixed";
+    div.style.borderStyle = "solid";
+    div.style.borderColor = "black";
+    div.style.borderRadius = "50%";
+    div.id = "ripple";
+    document.body.appendChild(div);
+    div.addEventListener('animationend', function(){div.parentElement.removeChild(div);}.bind(this));
+}
 function NewCursor() {
     var index = 0;
     var letters = ["e", "l", "i", "s", "h", "a"]
@@ -85,3 +97,4 @@ function NewCursor() {
     init();
 }
 export default NewCursor;
+export {clickEffect};
