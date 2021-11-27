@@ -12,7 +12,7 @@ function fade(element) {
             resizeEvent.initUIEvent('resize', true, false, window, 0); 
             window.dispatchEvent(resizeEvent);
         }
-        else {
+        else if (element && element.style) {
             element.style.opacity = op;
             element.style.filter = 'alpha(opacity=' + op * 100 + ")";
             op -= op * 0.1;
