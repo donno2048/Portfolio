@@ -12,7 +12,7 @@ function clickEffect(e) {
 }
 function NewCursor() {
     var index = 0;
-    var letters = ["e", "l", "i", "s", "h", "a"]
+    var letters = ["❤️", "🧡", "💛", "💚", "💙", "💜"];
     var width = window.innerWidth;
     var cursor = {x: width/2, y: width/2};
     var particles = [];

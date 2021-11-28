@@ -29,6 +29,6 @@ $('a[href^="#"]').on('click', function(event) {
 document.addEventListener('click', clickEffect);
 initSr();
 initTilt();
-//NewCursor(); // this is ugly
+NewCursor();
 fadeCube();
 animation();
