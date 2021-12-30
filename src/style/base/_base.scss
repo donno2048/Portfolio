@@ -30,3 +30,6 @@ a, svg>path, svg {
 h1, h2, h3, small, p, li {
   cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='32' height='32'><path d='M162.909,465.455c-12.853,0-23.273,10.42-23.273,23.273S150.056,512,162.909,512H256h93.091 c12.853,0,23.273-10.42,23.273-23.273s-10.42-23.273-23.273-23.273h-69.818V46.545h69.818c12.853,0,23.273-10.42,23.273-23.273 S361.944,0,349.091,0H256h-93.091c-12.853,0-23.273,10.42-23.273,23.273s10.42,23.273,23.273,23.273h69.818v418.909H162.909z'/></svg>") 15 15, auto !important;
 }
+a:not(:any-link) { // only style custom links (without href)
+  color: royalblue !important;
+}
