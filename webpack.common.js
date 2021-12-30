@@ -2,7 +2,6 @@ const Webpack = require("webpack");
 module.exports = {
   devtool: "source-map",
   entry: {
-    vendor: "./src/vendor.js",
     main: "./src/index.js"
   },
   module: {
