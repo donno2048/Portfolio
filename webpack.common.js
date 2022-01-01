@@ -9,26 +9,12 @@ module.exports = {
       {
         test: /\.html$/,
         use: ["html-loader"]
-      },
-      {
-        test: /\.(png|gif)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[hash].[ext]",
-              outputPath: "assets",
-              esModule: false
-            }
-          }
-        ]
       }
     ]
   },
   plugins: [
     new Webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
+      $: "jquery"
     })
   ]
 };

@@ -10,7 +10,7 @@ module.exports = merge(common, {
   devtool: "source-map",
   mode: 'production',
   output: {
-    filename: '[name].[contentHash].bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   },
   optimization: {
@@ -19,7 +19,7 @@ module.exports = merge(common, {
       new TerserPlugin(),
       new HtmlWebpackPlugin({
         template: './src/template.html',
-        favicon: './src/assets/favicon.png',
+        favicon: './src/favicon.png',
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
@@ -31,7 +31,7 @@ module.exports = merge(common, {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].[contentHash].css'
+      filename: '[name].css'
     })
   ],
   module: {
