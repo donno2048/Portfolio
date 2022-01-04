@@ -25,7 +25,7 @@ function animation() {
         cube.rotation.y += 0.05 * Math.random();
       });
       renderer.render( scene, camera );
-    }
+    };
     animate();
 }
 export default animation;
