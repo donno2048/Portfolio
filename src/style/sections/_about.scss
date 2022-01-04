@@ -33,6 +33,10 @@
       @include respond(tab-port-sm) {
         padding-bottom: 6.4rem;
       }
+      img {
+        width: 50%;
+        height: auto;
+      }
     }
     &__info {
       display: flex;
