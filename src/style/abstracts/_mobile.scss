@@ -1,8 +1,5 @@
 @media screen and (min-width: 0px) and (max-device-width: 780px) {
-	#pc {
-		display: none;
-	}
-	.mobile-hide {
+	#pc, span, .mobile-hide  {
 		display: none;
 	}
 }
