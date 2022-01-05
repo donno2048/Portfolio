@@ -1,3 +1,4 @@
 import tilt from 'tilt.js';
-const initTilt = () => {$('.project-wrapper__image a div').tilt({maxTilt: 3,});};
+tilt; // make code scanning not to say import never used
+const initTilt = () => {$('img,h1,.about-wrapper__info-text').tilt();};
 export default initTilt;
