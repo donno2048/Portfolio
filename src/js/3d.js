@@ -11,6 +11,11 @@ function animation() {
     renderer.render( scene, camera );
     const geometry = new THREE.BoxGeometry( 1, 1, 1 );
     const cubes = [];
+    window.addEventListener("resize", function() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize( window.innerWidth, window.innerHeight );
+    });
     for (let i = 0; i < 100 * Math.random() + 10; i++) {
         cubes.push(new THREE.Mesh(geometry, new THREE.MeshBasicMaterial( { color: 0xffffff * Math.random() } )));
         cubes[i].position.x = Math.random() * 20 - 10;
