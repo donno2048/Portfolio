@@ -17,7 +17,13 @@
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
+  ::selection {
+    color: transparent !important;
+    -webkit-text-fill-color: transparent;
+  }
   .hero-title {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
