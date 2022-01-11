@@ -9,7 +9,10 @@ import './style/main.scss';
   var input = '', key = '38384040373937396665';
   document.addEventListener('keydown', function (e) {
     input = key.indexOf(input) ? "" : input + e.keyCode;
-    if (input === key) scene.background = black;
+    if (input === key) {
+      scene.background = black;
+      NewCursor();
+    }
   });
 })()
 $('a[href^="#"]').on('click', function(event) {
@@ -29,6 +32,5 @@ $('a[href^="#"]').on('click', function(event) {
 document.addEventListener('click', clickEffect);
 initSr();
 initTilt();
-NewCursor();
 fadeCube();
 animation();
