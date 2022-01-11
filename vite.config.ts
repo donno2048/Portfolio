@@ -4,6 +4,8 @@ export default defineConfig({
     root: './src',
     build: {
         outDir: '../dist',
+        assetsDir: '.',
+        emptyOutDir: true,
     },
     plugins: [htmlMinimize()],
 });
