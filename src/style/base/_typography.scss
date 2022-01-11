@@ -1,11 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 h1 {
   font-weight: 700;
 }
 p,
-a {
-  font-family: 'Montserrat', sans-serif;
+.cta-btn {
   font-size: $default-font-size;
+}
+a {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  &:hover:not(.cta-btn) {
+    text-decoration: underline !important;
+    // make links enlarge on hover
+    // -webkit-transform: scale(1.25);
+    // -moz-transform: scale(1.25);
+    // transform: scale(1.25);
+  }
 }
 a,
 a:link,
@@ -13,9 +24,6 @@ a:hover,
 a:visited,
 a:active {
   text-decoration: none;
-}
-a:hover {
-  transition: all 0.3s ease-in-out;
 }
 .section-title {
   margin: 0px;
