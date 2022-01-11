@@ -3,6 +3,7 @@ import initSr from './js/sr';
 import NewCursor, {clickEffect} from './js/cursor';
 import fadeCube from './js/fadeCube';
 import animation, {scene, black} from './js/3d';
+import $ from 'jquery';
 import './js/bubbleColor'; //rightclick effect
 import './style/main.scss';
 (() => {
