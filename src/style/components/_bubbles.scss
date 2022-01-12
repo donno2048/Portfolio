@@ -80,9 +80,9 @@
 	animation-delay: 4s;
 }
 @include keyframes(rise) {
-	0%{
-        bottom: -300%;
-    	transform: translateX(0);
+	0% {
+		bottom: -500%;
+		transform: translateX(0);
 	}
 	33% {
 		transform: translate(200px);
