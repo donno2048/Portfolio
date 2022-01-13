@@ -81,7 +81,7 @@
 }
 @include keyframes(rise) {
 	0% {
-		bottom: -500%;
+		bottom: -500%; // FIXME: automatically set to document.documentElement.scrollHeight
 		transform: translateX(0);
 	}
 	33% {
