@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#7fffd4" />
+        <meta name="msapplication-navbutton-color" content="#7fffd4" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#7fffd4" />
+        <link rel="icon" href="./dist/favicon.png">
+        <style>
+            * {
+                cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' width='32' height='32'><g><path d='M136.485,475.076l-135.3-448.8c-5.2-15,7.3-30.9,26-25l448.7,135.4c17.3,5.2,19.5,31.5,2.1,38.5l-213.4,89.6l-89.5,213.5 C168.385,495.276,142.385,493.376,136.485,475.076z M51.085,51.276l108.3,358.2l70.8-168.7c2.1-5.2,6.2-9.4,10.4-10.4l168.6-70.8 L51.085,51.276z'/></g></svg>"), pointer;
+            }
+            body {
+                display: grid;
+                place-items: center;
+                background-image: linear-gradient(
+                    135deg,
+                    darkcyan 0%,
+                    aquamarine 100%
+                );
+                background-size: 400% 400%;
+                animation: gradient 5s ease-in-out infinite;
+            }
+            p, span {
+                position: absolute;
+                bottom: 40%;
+                color: white;
+                font-family: 'Arial';
+                cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='32' height='32'><path d='M162.909,465.455c-12.853,0-23.273,10.42-23.273,23.273S150.056,512,162.909,512H256h93.091 c12.853,0,23.273-10.42,23.273-23.273s-10.42-23.273-23.273-23.273h-69.818V46.545h69.818c12.853,0,23.273-10.42,23.273-23.273 S361.944,0,349.091,0H256h-93.091c-12.853,0-23.273,10.42-23.273,23.273s10.42,23.273,23.273,23.273h69.818v418.909H162.909z'/></svg>") 15 15, text !important;
+            }
+            p {
+                animation: resize 5s ease-in-out infinite;
+            }
+            span {
+                font-size: xx-large;
+            }
+            ::selection {
+                color: red;
+            }
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            @keyframes resize {
+                0% {
+                    font-size: 750%;
+                }
+                50% {
+                    font-size: 1250%;
+                }
+                100% {
+                    font-size: 750%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>404</p>
+        <span>Page not found</span>
+    </body>
+</html>
