@@ -1,9 +1,6 @@
 @import './keyframes';
 .bubble1, .bubble2, .bubble3, .bubble4, .bubble5, .bubble6, .bubble7, .bubble8, .bubble9, .bubble10 {
 	position: absolute;
-	bottom: -300%;
-	width: 40px;
-	height: 40px;
 	background: red;
 	border-radius: 50%;
 	opacity: 0.5;
@@ -81,17 +78,15 @@
 }
 @include keyframes(rise) {
 	0% {
-		bottom: -500%; // FIXME: automatically set to document.documentElement.scrollHeight
-		transform: translateX(0);
+		transform: translate(0, 0);
 	}
 	33% {
-		transform: translate(200px);
+		transform: translate(200px, -2000px);
 	}
 	66% {
-		transform: translate(-200px);
+		transform: translate(-200px, -4000px);
 	}
 	100% {
-		bottom: 100%;
-		transform: translateX(-100px);
+		transform: translate(-100px, -6000px);
 	}
 }
