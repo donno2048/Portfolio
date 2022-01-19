@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
 import htmlMinimize from '@sergeymakinen/vite-plugin-html-minimize';
 export default defineConfig({
     root: './src',
@@ -15,6 +16,9 @@ export default defineConfig({
         },
         sourcemap: true,
     },
-    plugins: [htmlMinimize()],
+    plugins: [
+        htmlMinimize(),
+        VitePWA()
+    ],
     base: './',
 });
