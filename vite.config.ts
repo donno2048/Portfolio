@@ -12,7 +12,8 @@ export default defineConfig({
                 chunkFileNames: '[name].js',
                 assetFileNames: '[name].[ext]'
             }
-        }
+        },
+        sourcemap: true,
     },
     plugins: [htmlMinimize()],
     base: './',
