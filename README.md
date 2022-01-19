@@ -1,10 +1,8 @@
 # Portfolio
 
-My Portfolio as published to https://donno2048.github.io/Portfolio/, https://stupefied-mclean-bb6293.netlify.app and http://donno2048.tk
+My Portfolio (with a konami code easter egg :wink:) as published to https://donno2048.github.io/Portfolio/ and https://stupefied-mclean-bb6293.netlify.app
 
-(There is a konami code easter egg)
-
-<!-- In case of URL change: I mentioned this URL in this README, in my GitHub profile, and on my CV -->
+In the dist folder there is a static build site
 
 ## To install
 
@@ -16,6 +14,6 @@ npm i
 
 ## To run
 
-`npm start`
-
-In the dist folder there is the static build site
+```sh
+npm start
+```
