@@ -18,7 +18,18 @@ export default defineConfig({
     },
     plugins: [
         htmlMinimize(),
-        VitePWA()
+        VitePWA({
+            manifest: {
+                background_color: '#7fffd4',
+                icons: [
+                    {
+                        src: './src/favicon.png',
+                        sizes: '48x48',
+                        type: 'image/png'
+                    }
+                ],
+            }
+        })
     ],
     base: './',
 });
