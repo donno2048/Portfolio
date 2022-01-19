@@ -1,1 +1,1 @@
-{"name":"donno2048","short_name":"donno2048","start_url":"./","display":"standalone","background_color":"#ffffff","lang":"en","scope":"./"}
+{"name":"donno2048","short_name":"donno2048","start_url":"./","display":"standalone","background_color":"#7fffd4","lang":"en","scope":"./","icons":[{"src":"./src/favicon.png","sizes":"48x48","type":"image/png"}]}
