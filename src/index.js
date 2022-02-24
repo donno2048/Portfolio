@@ -14,7 +14,10 @@ import './style/main.scss';
       NewCursor();
     }
   });
-})()
+})();
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js');
+}
 document.addEventListener('click', clickEffect);
 initSr();
 initTilt();

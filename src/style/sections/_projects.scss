@@ -2,6 +2,7 @@
   color: $dark-blue-text;
   .project-wrapper {
     .row {
+      justify-content: center;
       margin-bottom: 8rem;
       @include respond(phone) {
         margin-bottom: 4rem;
