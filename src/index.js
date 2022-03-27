@@ -3,6 +3,7 @@ import initSr from './js/sr';
 import NewCursor, {clickEffect} from './js/cursor';
 import fadeCube from './js/fadeCube';
 import animation, {scene, black} from './js/3d';
+import ballAnimation from './js/ball';
 import './js/bubbleColor'; //rightclick effect
 import './style/main.scss';
 (() => {
@@ -12,6 +13,8 @@ import './style/main.scss';
     if (input === key) {
       scene.background = black;
       NewCursor();
+      document.getElementById('ball').style.display = 'block'; // show text for ball
+      ballAnimation();
     }
   });
 })();
