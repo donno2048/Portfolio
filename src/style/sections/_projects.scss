@@ -28,3 +28,17 @@
     }
   }
 }
+.odd-projects {
+  transform: rotate($angle) !important;
+  -o-transform: rotate($angle) !important;
+  -ms-transform: rotate($angle) !important;
+  -moz-transform: rotate($angle) !important;
+  -webkit-transform: rotate($angle) !important;
+}
+.even-projects {
+  transform: rotate(-$angle) !important;
+  -o-transform: rotate(-$angle) !important;
+  -ms-transform: rotate(-$angle) !important;
+  -moz-transform: rotate(-$angle) !important;
+  -webkit-transform: rotate(-$angle) !important;
+}
