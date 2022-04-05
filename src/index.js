@@ -21,6 +21,9 @@ import './style/main.scss';
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('../sw.js');
 }
+if (window.innerWidth < 180) {
+  alert('Please use a larger screen to view this website.');
+}
 document.addEventListener('click', clickEffect);
 initSr();
 initTilt();
