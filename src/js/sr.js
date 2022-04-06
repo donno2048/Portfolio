@@ -1,66 +1,71 @@
 import assignProps from './assignProps';
+import ScrollReveal from 'scrollreveal';
 export default function() {
   const defaultProps = {
-    easing: 'cubic-bezier(0.5, 0, 0, 1)',
-    distance: '30px',
-    duration: 1000,
-    desktop: true,
-    mobile: true
+    distance: '100px',
+    duration: 1000
   };
-  ScrollReveal().reveal('.section-title', 
+  ScrollReveal().reveal('.hero-title',
     assignProps(
       {
-        delay:300,distance:'0px', 
-        origin:'bottom'
+        origin: 'left', // scale: .5,
+        delay: 500
       }, defaultProps)
   );
-  ScrollReveal().reveal('.hero-title', 
-    assignProps(
-      { 
-        delay: 500, 
-        origin: window.innerWidth > 768 ? 'left' : 'bottom'
-      }, defaultProps)
-  );
-  ScrollReveal().reveal('.hero-cta', 
+  ScrollReveal().reveal('#about>.container>.section-title',
     assignProps(
       {
-        delay: 1000, 
-        origin: window.innerWidth > 768 ? 'left' : 'bottom'
+        delay: 2000
       }, defaultProps)
   );
-  ScrollReveal().reveal('.about-wrapper__image', 
+  ScrollReveal().reveal('.about-wrapper__image',
     assignProps(
       {
-        delay: 600,
-        origin: 'bottom'
+        delay: 2500
       }, defaultProps)
   );
-  ScrollReveal().reveal('.about-wrapper__info', 
+  ScrollReveal().reveal('.about-wrapper__info',
     assignProps(
       {
-        delay: 1000,
-        origin: window.innerWidth > 768 ? 'left' : 'bottom'
+        delay: 2500,
+        origin: 'left'
       }, defaultProps)
   );
-  ScrollReveal().reveal('.project-wrapper__text', 
+  ScrollReveal().reveal('.project-wrapper>.section-title',
     assignProps(
       {
-        delay: 500,
-        origin: window.innerWidth > 768 ? 'left' : 'bottom'
+        delay: 3500
       }, defaultProps)
   );
-  ScrollReveal().reveal('.project-wrapper__image', 
+  ScrollReveal().reveal('.project-wrapper__text',
     assignProps(
       {
-        delay: 1000,
-        origin: window.innerWidth > 768 ? 'right' : 'bottom'
+        delay: 4000
       }, defaultProps)
   );
-  ScrollReveal().reveal('.contact-wrapper', 
+  ScrollReveal().reveal('#games>.container>.section-title',
     assignProps(
       {
-        delay: 800,
-        origin: 'bottom'
+        delay: 7000
+      }, defaultProps)
+  );
+  ScrollReveal().reveal('#games>.container>.col',
+    assignProps(
+      {
+        delay: 7500,
+        origin: 'left'
+      }, defaultProps)
+  );
+  ScrollReveal().reveal('#contact>.container>.section-title',
+    assignProps(
+      {
+        delay: 8500
+      }, defaultProps)
+  );
+  ScrollReveal().reveal('.contact-wrapper',
+    assignProps(
+      {
+        delay: 9000
       }, defaultProps)
   );
 }
