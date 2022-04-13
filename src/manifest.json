@@ -1,7 +1,7 @@
 {
     "name": "donno2048",
     "short_name": "donno2048",
-    "start_url": "./dist/index.html",
+    "start_url": "../dist/index.html",
     "icons": [
         {
             "src": "icons/manifest-icon-192.maskable.png",
