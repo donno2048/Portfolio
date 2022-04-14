@@ -17,7 +17,6 @@
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "sass": "^1.47.0",
-    "scrollreveal": "^4.0.9",
     "three": "^0.137.0",
     "tilt.js": "^1.2.1",
     "vite": "^2.7.10"
