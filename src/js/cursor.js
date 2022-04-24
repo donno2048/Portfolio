@@ -6,6 +6,7 @@ function clickEffect(e) {
     div.style.borderStyle = "solid";
     div.style.borderColor = "black";
     div.style.borderRadius = "50%";
+    div.style.userSelect = "none";
     div.id = "ripple";
     document.body.appendChild(div);
     div.addEventListener('animationend', function(){div.parentElement.removeChild(div);}.bind(this));
