@@ -1,22 +1,27 @@
 @use '../abstracts' as *;
+h2 {
+    width: max-content;
+    left: 50%;
+}
 h2.dark-blue-text {
     animation: blue-moveup 3s infinite ease-in;
 }
 h2:not(.dark-blue-text) {
     color: transparent;
     -webkit-text-stroke: 1px $white-color;
+    transform: translateX(-50%);
 }
 @include keyframes(blue-moveup) {
     0% {
-        transform: translateY(0);
+        transform: translate(-50%, 0);
         text-shadow: 0 0 transparentize($color: $dark-blue-text, $amount: .5);
     }
     50% {
-        transform: translateY(-50%);
+        transform: translate(-50%, -50%);
         text-shadow: 0 50px transparentize($color: $dark-blue-text, $amount: 1);
     }
     100% {
-        transform: translateY(0);
+        transform: translate(-50%, 0);
         text-shadow: 0 0 transparentize($color: $dark-blue-text, $amount: .5);
     }
 }
