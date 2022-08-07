@@ -8,7 +8,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: npm i
+      - run: npm update
       - uses: EndBug/add-and-commit@v7.2.1
         with:
           author_name: donno2048
