@@ -1,47 +1,46 @@
 @use '../abstracts' as *;
 #projects {
-  color: $dark-blue-text;
-  .project-wrapper {
-    .row {
-      .cta-btn--hero {
-        font-family: 'SymbolaRegular';
-      }
-      justify-content: center;
-      margin-bottom: 8rem;
-      @include respond(phone) {
-        margin-bottom: 4rem;
-      }
-    }
-    &__text {
-      text-align: left;
-      @include respond(phone) {
-        margin-bottom: 2.5rem !important;
-      }
-      @include respond(tab-land) {
-        margin-bottom: 4.8rem;
-      }
-      &-title {
-        font-weight: bold;
-        margin-bottom: 2rem;
-        font-size: $mid-font-size;
-        @include respond(phone) {
-          font-size: 2rem;
-        }
-      }
-    }
-  }
+	color: $dark-blue-text;
+	.project-wrapper {
+		.row {
+			.cta-btn--hero {
+				font-family: 'SymbolaRegular';
+			}
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin-bottom: 8rem;
+			@include mobile {
+				margin-bottom: 4rem;
+			}
+		}
+		&__text {
+			text-align: left;
+			@include mobile {
+				margin-bottom: 2.5rem;
+			}
+			&-title {
+				font-weight: bold;
+				margin-bottom: 2rem;
+				font-size: $mid-font-size;
+				@include mobile {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
 }
 .odd-projects {
-  -webkit-transform: rotate($angle) !important;
-  -o-transform: rotate($angle) !important;
-  -ms-transform: rotate($angle) !important;
-  -moz-transform: rotate($angle) !important;
-  transform: rotate($angle) !important;
+	-webkit-transform: rotate($angle) !important;
+	-o-transform: rotate($angle) !important;
+	-ms-transform: rotate($angle) !important;
+	-moz-transform: rotate($angle) !important;
+	transform: rotate($angle) !important;
 }
 .even-projects {
-  -webkit-transform: rotate(-$angle) !important;
-  -o-transform: rotate(-$angle) !important;
-  -ms-transform: rotate(-$angle) !important;
-  -moz-transform: rotate(-$angle) !important;
-  transform: rotate(-$angle) !important;
+	-webkit-transform: rotate(-$angle) !important;
+	-o-transform: rotate(-$angle) !important;
+	-ms-transform: rotate(-$angle) !important;
+	-moz-transform: rotate(-$angle) !important;
+	transform: rotate(-$angle) !important;
 }
