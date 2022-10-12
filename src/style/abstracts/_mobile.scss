@@ -1,12 +1,11 @@
-@media screen and (min-width: 0px) and (max-device-width: 780px) {
-	#pc, span, .mobile-hide, .bubbles  {
-		display: none !important;
-	}
-}
+@use './mixins' as *;
 .mobile-articles {
 	display: none;
 }
-@media screen and (max-device-width:780px) {
+@include mobile {
+	#pc, span, .mobile-hide, .bubbles {
+		display: none !important;
+	}
 	.mobile-articles {
 		display: block;
 	}

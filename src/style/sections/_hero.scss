@@ -1,36 +1,37 @@
 @use '../abstracts' as *;
 #hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  @include respond(phone) {
-    padding: 0rem $default-font-size;
-  }
-  ::selection {
-    color: transparent !important;
-    -webkit-text-fill-color: transparent;
-  }
-  .hero-title {
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 5.6rem;
-    font-weight: 700;
-    // align hero text to left
-    // text-align: left;
-    @include respond(tab-land) {
-      font-size: 4rem;
-    }
-    @include respond(tab-port) {
-      font-size: 3.6rem;
-      text-align: center;
-    }
-    @include respond(phone) {
-      font-size: 3.5rem;
-      line-height: 1.5;
-    }
-    @include respond(phone-xs) {
-      font-size: 2.8rem;
-    }
-  }
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	@include mobile {
+		padding: 0rem $default-font-size;
+	}
+	::-moz-selection {
+		color: transparent !important;
+		-webkit-text-fill-color: transparent;
+	}
+	::selection {
+		color: transparent !important;
+		-webkit-text-fill-color: transparent;
+	}
+	.hero-title {
+		background-image: -webkit-gradient(linear, right top, left top, from(violet), color-stop(indigo), color-stop(blue), color-stop(green), color-stop(yellow), color-stop(orange), to(red));
+		background-image: -o-linear-gradient(right, violet, indigo, blue, green, yellow, orange, red);
+		background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+		-webkit-background-clip: text;
+		background-clip: text;
+		font-size: 5.6rem;
+		font-weight: 700;
+		// align hero text to left
+		// text-align: left;
+		@include mobile {
+			text-align: center;
+			font-size: 3rem;
+			line-height: 1.5;
+		}
+	}
 }

@@ -1,71 +1,56 @@
 @use '../abstracts' as *;
 .cta-btn {
-  position: relative;
-  padding: 0.8rem $default-font-size;
-  font-weight: bold;
-  line-height: 1;
-  &::after {
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
-  }
+	position: relative;
+	padding: 0.8rem $default-font-size;
+	font-weight: bold;
+	line-height: 1;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 0px;
+		height: 100%;
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+		-webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+		-o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+		transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+	}
 }
 .cta-btn--hero {
-  @include supportColorForIE11();
-  border: 2px solid transparent;
-  box-shadow: -1px -1px 2px darken($color: $primary-color, $amount: 10), 1px 1px 2px lighten($color: $secondary-color, $amount: 10);
-  border-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
-  border-image-slice: 1;
-  @include supportIE11() {
-    color:$secondary-color !important;
-    &:hover {
-      color:$white-color !important;
-    }
-  }
-  @include respond(phone) {
-    background-image: none;
-    border: 2px solid $secondary-color;
-    -webkit-text-fill-color: $secondary-color;
-  }
-  &::after {
-    background-image: linear-gradient(
-      135deg,
-      $primary-color 0%,
-      $secondary-color 100%
-    );
-    @include respond(phone) {
-      background-image: none;
-    }
-  }
-  &:hover {
-    -webkit-text-fill-color: $white-color;
-    @include respond(phone) {
-      -webkit-text-fill-color: $secondary-color;
-    }
-    &::after {
-      width: 100%;
-    }
-  }
+	border: 2px solid $secondary-color;
+	-webkit-text-fill-color: $secondary-color;
+	-webkit-box-shadow: -1px -1px 2px darken($color: $primary-color, $amount: 10), 1px 1px 2px lighten($color: $secondary-color, $amount: 10);
+	box-shadow: -1px -1px 2px darken($color: $primary-color, $amount: 10), 1px 1px 2px lighten($color: $secondary-color, $amount: 10);
+	border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+	border-image-slice: 1;
+	&::after {
+		background-image: -o-linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+		background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+		@include mobile {
+			background-image: none;
+		}
+	}
+	&:hover {
+		-webkit-text-fill-color: $white-color;
+		@include mobile {
+			-webkit-text-fill-color: $secondary-color;
+		}
+		&::after {
+			width: 100%;
+		}
+	}
 }
 .cta-btn--resume {
-  color: $white-color;
-  border: 2px solid $white-color;
-  &::after {
-    background: $white-color;
-  }
-  &:hover {
-    color: $secondary-color;
-    &::after {
-      width: 100%;
-    }
-  }
+	color: $white-color;
+	border: 2px solid $white-color;
+	&::after {
+		background: $white-color;
+	}
+	&:hover {
+		color: $secondary-color;
+		&::after {
+			width: 100%;
+		}
+	}
 }

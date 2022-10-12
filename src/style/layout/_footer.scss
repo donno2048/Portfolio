@@ -1,24 +1,30 @@
 @use '../abstracts' as *;
 .footer {
-  background-color: $dark-grey;
-  padding: 4.8rem 0;
-  @include respond(phone) {
-    border: 0px;
-  }
-  & hr {
-    width: 50%;
-    border-top: 2px solid rgba(255, 255, 255, 0.15);
-  }
+	background-color: $dark-grey;
+	padding: 4.8rem 0;
+	@include mobile {
+		border: 0px;
+	}
+	& hr {
+		width: 50%;
+		border-top: 2px solid rgba(255, 255, 255, 0.15);
+	}
 }
 .social-links {
-  justify-content: center;
-  a {
-    width: 5rem;
-    height: 5rem;
-    margin: $default-font-size $default-font-size;
-    transition: all 0.25s ease-in;
-    &:hover {
-      transform: translateY(-5px);
-    }
-  }
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	a {
+		width: 5rem;
+		height: 5rem;
+		margin: $default-font-size $default-font-size;
+		-webkit-transition: all 0.25s ease-in;
+		-o-transition: all 0.25s ease-in;
+		transition: all 0.25s ease-in;
+		&:hover {
+			-webkit-transform: translateY(-5px);
+			-ms-transform: translateY(-5px);
+			transform: translateY(-5px);
+		}
+	}
 }

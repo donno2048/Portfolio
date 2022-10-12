@@ -1,17 +1,18 @@
 hr:not(#floor) {
-    background-color: inherit;
-    filter: brightness(.75);
-    animation: resize 10s ease infinite;
+	background-color: inherit;
+	-webkit-filter: brightness(.75);
+	filter: brightness(.75);
+	-webkit-animation: resize 10s ease infinite;
+	animation: resize 10s ease infinite;
 }
 @keyframes resize {
-    0% {
-      width: 10%;
-    }
-    50% {
-      width: 50%;
-    }
-    100% {
-      width: 10%;
-    }
+	0% {
+		width: 10%;
+	}
+	50% {
+		width: 50%;
+	}
+	100% {
+		width: 10%;
+	}
 }
-  
