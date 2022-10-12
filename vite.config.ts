@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 import htmlMinimize from '@sergeymakinen/vite-plugin-html-minimize';
 export default defineConfig({
 	root: './src',
@@ -17,4 +18,9 @@ export default defineConfig({
 	},
 	plugins: [htmlMinimize()],
 	base: './',
+	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, 'src')
+		}
+	}
 });
