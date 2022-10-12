@@ -9,7 +9,18 @@
 			-webkit-box-pack: center;
 			-ms-flex-pack: center;
 			justify-content: center;
-			margin-bottom: 8rem;
+			:has(.even-projects) {
+				@media (max-width: 75em) {
+					margin-bottom: 20rem !important;
+				}
+				margin-bottom: 10rem;
+			}
+			:has(.odd-projects) {
+				@media (max-width: 75em) {
+					margin-bottom: 0 !important;
+				}
+				margin-bottom: 5rem;
+			}
 			@include mobile {
 				margin-bottom: 4rem;
 			}

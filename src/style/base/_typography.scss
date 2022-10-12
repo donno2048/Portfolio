@@ -37,9 +37,7 @@ a, a:link, a:hover, a:visited, a:active {
 	color: $dark-blue-text !important;
 }
 .text-color-main {
-	@include mobile {
-		-webkit-text-fill-color: $secondary-color;
-	}
+	-webkit-text-fill-color: $secondary-color;
 	&:hover {
 		-webkit-transform: translateX(2px);
 		-ms-transform: translateX(2px);
