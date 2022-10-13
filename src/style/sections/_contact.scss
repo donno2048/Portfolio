@@ -11,9 +11,9 @@
 	color: $white-color;
 	@include mobile {
 		padding: 10rem 0;
-		clip-path: none;
 		margin-top: 0;
 		-webkit-clip-path: none;
+		clip-path: none;
 	}
 	.contact-wrapper>a {
 		font-size: 2.4rem;
