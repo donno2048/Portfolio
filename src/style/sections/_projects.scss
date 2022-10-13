@@ -9,6 +9,9 @@
 			-webkit-box-pack: center;
 			-ms-flex-pack: center;
 			justify-content: center;
+			@-moz-document url-prefix() { // noqa: only for firefox
+				margin-bottom: 100px;
+			}
 			:has(.even-projects) {
 				@media (max-width: 75em) {
 					margin-bottom: 20rem !important;
