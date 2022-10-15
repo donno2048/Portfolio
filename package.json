@@ -14,7 +14,6 @@
   "dependencies": {
     "@sergeymakinen/vite-plugin-html-minimize": "^1.0.0",
     "@types/jquery": "^3.5.12",
-    "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "sass": "^1.47.0",
     "three": "^0.137.0",
