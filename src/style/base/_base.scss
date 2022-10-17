@@ -9,6 +9,8 @@ html {
 	color: red;
 }
 body {
+	margin: 0;
+	font-family: sans-serif;
 	text-align: center;
 	background-color: #FAFAFF;
 }
@@ -31,4 +33,22 @@ h1, h2, h3, small, p, li {
 }
 a:not(:any-link) { // only style custom links (without href)
 	color: royalblue !important;
+}
+small {
+	font-weight: 400;
+}
+hr {
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, .1);
+}
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 70%;
+}
+.row {
+	display: flex;
+	&>div {
+		flex: 0 0 50%;
+	}
 }

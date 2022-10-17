@@ -1,5 +1,3 @@
-import tilt from 'tilt.js';
-import $ from 'jquery';
-try { tilt(); } catch { } // make code scanning not to say import never used
-const initTilt = () => { $('img,h1,.about-wrapper__info-text').tilt(); };
+import VanillaTilt from 'vanilla-tilt';
+const initTilt = () => { VanillaTilt.init(document.querySelectorAll('img,h1,.about-wrapper__info-text')) };
 export default initTilt;

@@ -12,7 +12,6 @@
 @use './sections/contact';
 @use './sections/hero';
 @use './sections/projects';
-@use './vendors/bootstrap.scss';
 // the next three need to be imported after the above, it removes the need to use !important everywhere
 @use './base/base';
 @use './base/typography';
