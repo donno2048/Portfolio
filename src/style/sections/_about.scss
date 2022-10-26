@@ -21,6 +21,10 @@
 		}
 		&__image {
 			@include mobile {
+				img {
+					object-fit: cover;
+					width: auto;
+				}
 				height: 100%;
 				padding-bottom: 6.4rem;
 			}

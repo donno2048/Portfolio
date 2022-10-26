@@ -4,6 +4,7 @@ import NewCursor, { clickEffect } from './js/cursor';
 import fadeCube from './js/fadeCube';
 import animation, { scene, black } from './js/3d';
 import ballAnimation from './js/ball';
+import './js/symbols';
 import './js/bubbleColor'; //rightclick effect
 import './style/main.scss';
 (() => {
