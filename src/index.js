@@ -2,7 +2,6 @@ import initTilt from './js/tilt';
 import initSr from './js/sr';
 import NewCursor, { clickEffect } from './js/cursor';
 import fadeCube from './js/fadeCube';
-import animation, { scene, black } from './js/3d';
 import ballAnimation from './js/ball';
 import './js/symbols';
 import './js/bubbleColor'; //rightclick effect
@@ -12,7 +11,6 @@ import './style/main.scss';
 	document.addEventListener('keydown', function (e) {
 		input = key.indexOf(input) ? "" : input + e.keyCode;
 		if (input === key) {
-			scene.background = black;
 			NewCursor();
 			document.getElementById('ball').style.display = 'block'; // show text for ball
 			ballAnimation();

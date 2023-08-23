@@ -20,6 +20,7 @@
 			padding-bottom: 5rem;
 		}
 		&__image {
+			filter: brightness(75%);
 			@include mobile {
 				img {
 					object-fit: cover;
