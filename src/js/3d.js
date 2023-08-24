@@ -1,8 +1,9 @@
 import * as THREE from 'three';
 const scene = new THREE.Scene();
 const black = new THREE.Color(0x000000);
+const white = new THREE.Color(0xffffff);
 function animation() {
-	scene.background = new THREE.Color(0xffffff);
+	scene.background = new THREE.Color(black);
 	const camera = new THREE.OrthographicCamera(-10, 10, -10, 10);
 	const renderer = new THREE.WebGLRenderer({ canvas: document.querySelector('canvas') });
 	renderer.setPixelRatio(window.devicePixelRatio);
@@ -41,4 +42,4 @@ function animation() {
 	animate();
 }
 export default animation;
-export { scene, black };
+export { scene, black, white };

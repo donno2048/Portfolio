@@ -1,14 +1,14 @@
 @use '../abstracts' as *;
 #contact {
-	background-image: -o-linear-gradient(315deg, $primary-color 0%, $secondary-color 100%);
-	background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+	background-image: -o-linear-gradient(315deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+	background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
 	background-size: 400% 400%;
 	-webkit-animation: gradient 15s ease infinite;
 	animation: gradient 15s ease infinite;
 	-webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
 	padding: 15rem 0 10rem 0;
-	color: $white-color;
+	color: var(--white-color);
 	@include mobile {
 		padding: 10rem 0;
 		margin-top: 0;

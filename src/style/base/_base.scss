@@ -1,18 +1,19 @@
+@use '../abstracts' as *;
 html {
 	overflow-x: hidden;
 	font-size: 62.5%;
 }
 ::-moz-selection {
-	color: red;
+	color: var(--selection-color);
 }
 ::selection {
-	color: red;
+	color: var(--selection-color);
 }
 body {
 	margin: 0;
 	font-family: sans-serif;
 	text-align: center;
-	background-color: #FAFAFF;
+	background-color: var(--background-color);
 }
 ::-webkit-scrollbar {
 	border-radius: 10px;

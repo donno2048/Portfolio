@@ -1,5 +1,6 @@
+@use '../abstracts' as *;
 hr:not(#floor) {
-	background-color: inherit;
+	background-color: var(--hr-color);
 	-webkit-filter: brightness(.75);
 	filter: brightness(.75);
 	-webkit-animation: resize 10s ease infinite;

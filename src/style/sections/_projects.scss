@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 #projects {
-	color: $dark-blue-text;
+	color: var(--dark-blue-text);
 	.project-wrapper {
 		.row {
 			.cta-btn--hero {

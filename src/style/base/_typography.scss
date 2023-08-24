@@ -38,10 +38,10 @@ a, a:link, a:hover, a:visited, a:active {
 	}
 }
 .dark-blue-text {
-	color: $dark-blue-text !important;
+	color: var(--dark-blue-text) !important;
 }
 .text-color-main {
-	-webkit-text-fill-color: $secondary-color;
+	-webkit-text-fill-color: var(--secondary-color);
 	&:hover {
 		-webkit-transform: translateX(2px);
 		-ms-transform: translateX(2px);
