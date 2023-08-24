@@ -4,16 +4,16 @@ html {
 	font-size: 62.5%;
 }
 ::-moz-selection {
-	color: black;
+	color: var(--selection-color);
 }
 ::selection {
-	color: black;
+	color: var(--selection-color);
 }
 body {
 	margin: 0;
 	font-family: sans-serif;
 	text-align: center;
-	background-color: $background-color;
+	background-color: var(--background-color);
 }
 ::-webkit-scrollbar {
 	border-radius: 10px;

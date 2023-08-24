@@ -2,6 +2,7 @@ import initTilt from './js/tilt';
 import initSr from './js/sr';
 import NewCursor, { clickEffect } from './js/cursor';
 import fadeCube from './js/fadeCube';
+import animation, { scene, black, white } from './js/3d';
 import ballAnimation from './js/ball';
 import './js/symbols';
 import './js/bubbleColor'; //rightclick effect
@@ -23,6 +24,17 @@ if ('serviceWorker' in navigator) {
 if (window.innerWidth < 180) {
 	alert('Please use a larger screen to view this website.');
 }
+function toggleTheme() {
+	const pageData = document.getElementsByTagName('html')[0].dataset;
+	if (pageData.theme === 'dark') {
+		pageData.theme = 'light';
+		scene.background = white;
+	} else {
+		pageData.theme = 'dark';
+		scene.background = black;
+	}
+}
+document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 document.addEventListener('click', clickEffect);
 initSr();
 initTilt();

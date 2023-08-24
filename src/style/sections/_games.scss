@@ -1,5 +1,6 @@
+@use '../abstracts' as *;
 #games {
     .col {
-        color: lightcoral;
+        color: var(--small-text-color);
     }
 }

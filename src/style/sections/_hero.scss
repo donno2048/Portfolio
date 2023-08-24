@@ -26,7 +26,7 @@
 		background-clip: text;
 		font-size: 5.6rem;
 		font-weight: 700;
-		color: $dark-grey;
+		color: var(--dark-grey);
 		// align hero text to left
 		// text-align: left;
 		@include mobile {
