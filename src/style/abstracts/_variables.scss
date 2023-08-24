@@ -4,6 +4,8 @@ html[data-theme='dark'] {
     --white-color: #999;
     --dark-grey: #333;
     --dark-blue-text: #f05050;
+    --dark-blue-text-1: #{transparentize(#f05050, .5)};
+    --dark-blue-text-2: #{transparentize(#f05050, 1)};
     --background-color: #222;
     --selection-color: black;
     --hr-color: white;
@@ -16,6 +18,8 @@ html[data-theme='light'] {
     --white-color: white;
     --dark-grey: #333;
     --dark-blue-text: #006;
+    --dark-blue-text-1: #{transparentize(#006, .5)};
+    --dark-blue-text-2: #{transparentize(#006, 1)};
     --background-color: white;
     --selection-color: red;
     --hr-color: black;

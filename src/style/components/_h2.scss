@@ -16,23 +16,23 @@ h2:not(.dark-blue-text) {
 	-ms-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
-// @include keyframes(blue-moveup) {
-// 	0% {
-// 		-webkit-transform: translate(-50%, 0);
-// 		-ms-transform: translate(-50%, 0);
-// 		transform: translate(-50%, 0);
-// 		text-shadow: 0 0 transparentize(var(--dark-blue-text), .5);
-// 	}
-// 	50% {
-// 		-webkit-transform: translate(-50%, -50%);
-// 		-ms-transform: translate(-50%, -50%);
-// 		transform: translate(-50%, -50%);
-// 		text-shadow: 0 50px transparentize(var(--dark-blue-text), 1);
-// 	}
-// 	100% {
-// 		-webkit-transform: translate(-50%, 0);
-// 		-ms-transform: translate(-50%, 0);
-// 		transform: translate(-50%, 0);
-// 		text-shadow: 0 0 transparentize(var(--dark-blue-text), .5);
-// 	}
-// }
+@include keyframes(blue-moveup) {
+	0% {
+		-webkit-transform: translate(-50%, 0);
+		-ms-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+		text-shadow: 0 0 var(--dark-blue-text-1);
+	}
+	50% {
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-shadow: 0 50px var(--dark-blue-text-2);
+	}
+	100% {
+		-webkit-transform: translate(-50%, 0);
+		-ms-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+		text-shadow: 0 0 var(--dark-blue-text-1);
+	}
+}
