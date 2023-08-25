@@ -1,11 +1,4 @@
 @use '../abstracts' as *;
-#theme-toggle {
-	position: fixed;
-	top: 0;
-	z-index: 1;
-	background-color: var(--background-color);
-	color: var(--hr-color);
-}
 .cta-btn {
 	position: relative;
 	padding: 0.8rem $default-font-size;
