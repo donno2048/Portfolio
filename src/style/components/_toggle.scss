@@ -21,7 +21,7 @@
 .slider:before {
     border-radius: 50%;
     position: absolute;
-    content: '☾';
+    content: '\263E';
     height: 26px;
     width: 26px;
     left: 4px;
@@ -33,7 +33,7 @@
     font-size: 18px;
 }
 #theme-toggle:checked + .slider:before {
-    content: '☀';
+    content: '\2600';
     background-color: white;
     color: gold;
     -webkit-transform: translateX(26px);
