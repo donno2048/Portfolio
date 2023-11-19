@@ -10,6 +10,13 @@
 				-moz-transform: rotate($angle) !important;
 				transform: rotate($angle) !important;
 			}
+			:nth-child(even) {
+				-webkit-transform: rotate(-$angle) !important;
+				-o-transform: rotate(-$angle) !important;
+				-ms-transform: rotate(-$angle) !important;
+				-moz-transform: rotate(-$angle) !important;
+				transform: rotate(-$angle) !important;
+			}
 			.cta-btn--hero {
 				font-family: 'Symbola';
 			}
@@ -19,7 +26,7 @@
 			@media screen and (min--moz-device-pixel-ratio: 0) {
 				margin-bottom: 100px;
 			}
-			:has(.even-projects) {
+			:nth-child(odd) {
 				@media (min-width: 780px) {
 					margin-bottom: 15rem;
 				}
@@ -43,11 +50,4 @@
 			}
 		}
 	}
-}
-.even-projects {
-	-webkit-transform: rotate(-$angle) !important;
-	-o-transform: rotate(-$angle) !important;
-	-ms-transform: rotate(-$angle) !important;
-	-moz-transform: rotate(-$angle) !important;
-	transform: rotate(-$angle) !important;
 }
