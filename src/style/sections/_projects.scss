@@ -3,6 +3,13 @@
 	color: var(--dark-blue-text);
 	.project-wrapper {
 		.row {
+			:nth-child(odd) {
+				-webkit-transform: rotate($angle) !important;
+				-o-transform: rotate($angle) !important;
+				-ms-transform: rotate($angle) !important;
+				-moz-transform: rotate($angle) !important;
+				transform: rotate($angle) !important;
+			}
 			.cta-btn--hero {
 				font-family: 'Symbola';
 			}
@@ -36,13 +43,6 @@
 			}
 		}
 	}
-}
-.odd-projects {
-	-webkit-transform: rotate($angle) !important;
-	-o-transform: rotate($angle) !important;
-	-ms-transform: rotate($angle) !important;
-	-moz-transform: rotate($angle) !important;
-	transform: rotate($angle) !important;
 }
 .even-projects {
 	-webkit-transform: rotate(-$angle) !important;
