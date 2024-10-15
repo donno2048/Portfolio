@@ -8,6 +8,7 @@ h2 {
 h2.dark-blue-text {
 	-webkit-animation: blue-moveup 3s infinite ease-in;
 	animation: blue-moveup 3s infinite ease-in;
+	will-change: transform, text-shadow, -ms-transform, -webkit-transform;
 }
 h2:not(.dark-blue-text) {
 	color: transparent;
