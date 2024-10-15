@@ -5,6 +5,7 @@ hr:not(#floor) {
 	filter: brightness(.75);
 	-webkit-animation: resize 10s ease infinite;
 	animation: resize 10s ease infinite;
+	will-change: width;
 }
 @keyframes resize {
 	0% {
