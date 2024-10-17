@@ -2,6 +2,7 @@
 #ripple {
 	-webkit-animation: ripple 0.5s ease-out;
 	animation: ripple 0.5s ease-out;
+	will-change: opacity, width, height, margin, border-width;
 }
 @include keyframes(ripple) {
 	0% {
