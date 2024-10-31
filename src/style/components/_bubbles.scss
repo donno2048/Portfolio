@@ -6,6 +6,7 @@
 	opacity: 0.5;
 	-webkit-animation: rise 10s infinite ease-in;
 	animation: rise 10s infinite ease-in;
+	will-change: transform;
 	z-index: 99;
 }
 .bubble1 {
