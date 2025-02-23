@@ -8,10 +8,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: npm i
-      - run: npm run-script build
-      - uses: EndBug/add-and-commit@v7.2.1
-        with:
-          author_name: donno2048
-          author_email: just4now666666@gmail.com
-          message: 'Add the dist folder [GitHub action]'
+      - run: |
+          npm i
+          npm run-script build
+          git config --global user.email "just4now666666@gmail.com"
+          git config --global user.name "donno2048"
+          git commit -am "${GITHUB_WORKFLOW,,}" || true
+          git push
