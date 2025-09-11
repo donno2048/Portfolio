@@ -13,11 +13,11 @@
   },
   "homepage": "https://github.com/donno2048/Portfolio",
   "dependencies": {
-    "@sergeymakinen/vite-plugin-html-minimize": "^1.0.0",
+    "@sergeymakinen/vite-plugin-html-minimize": "^2.1.1",
     "jquery": "^3.6.1",
     "sass": "^1.47.0",
     "three": "^0.137.0",
     "vanilla-tilt": "^1.7.2",
-    "vite": "^5.4.8"
+    "vite": "^7.1.5"
   }
 }
