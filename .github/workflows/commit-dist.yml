@@ -13,5 +13,6 @@ jobs:
           npm run-script build
           git config --global user.email "just4now666666@gmail.com"
           git config --global user.name "donno2048"
+          git add .
           git commit -am "${GITHUB_WORKFLOW,,}" || true
           git push
